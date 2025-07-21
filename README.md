@@ -5,15 +5,15 @@ Syrna is a clean and modern Free responsive app landing-page template for Mobile
 <!-- demo -->
 ## Example Site
 
-| [![](screenshots/homepage.png)](https://demo.gelistirici.com/small-apps/) | [![](screenshots/homepage-2.png)](http://localhost:3000/homepage-2.html) | [![](screenshots/homepage-3.png)](https://demo.gelistirici.com/small-apps/homepage-3.html) |
+| [![](screenshots/homepage.png)](https://www.gelistirici.com/syrna/) | [![](screenshots/homepage-2.png)](http://localhost:3000/homepage-2.html) | [![](screenshots/homepage-3.png)](https://www.gelistirici.com/syrna/homepage-3.html) |
 |:---:|:---:|:---:|
 | **Homepage 1**  | **Homepage 2**  | **Homepage 3**  |
-| [![](screenshots/about.png)](https://demo.gelistirici.com/small-apps/about.html) | [![](screenshots/career.png)](https://demo.gelistirici.com/small-apps/career.html) | [![](screenshots/team.png)](https://demo.gelistirici.com/small-apps/team.html) |
+| [![](screenshots/about.png)](https://www.gelistirici.com/syrna/about.html) | [![](screenshots/career.png)](https://www.gelistirici.com/syrna/career.html) | [![](screenshots/team.png)](https://www.gelistirici.com/syrna/team.html) |
 | **About** | **Career** | **Team** |
-| [![](screenshots/blog-r.png)](https://demo.gelistirici.com/small-apps/blog.html) | [![](screenshots/blog-details.png)](https://demo.gelistirici.com/small-apps/blog-single.html) | [![](screenshots/contact.png)](https://demo.gelistirici.com/small-apps/contact.html) |
+| [![](screenshots/blog-r.png)](https://www.gelistirici.com/syrna/blog.html) | [![](screenshots/blog-details.png)](https://www.gelistirici.com/syrna/blog-single.html) | [![](screenshots/contact.png)](https://www.gelistirici.com/syrna/contact.html) |
 | **Blogs** | **Blog Details** | **Contact** |
 
-👉🏻[View Live Preview](https://demo.gelistirici.com/small-apps/)
+👉🏻[View Live Preview](https://www.gelistirici.com/syrna/)
 
 <!-- resources -->
 ## Pages
@@ -37,7 +37,7 @@ Syrna is a clean and modern Free responsive app landing-page template for Mobile
 <!-- download -->
 ## Download And installation
 
-Download this template from [Github](https://github.com/gelistirici/small-apps/archive/main.zip)
+Download this template from [Github](https://github.com/dolunay/www.gelistirici.com/archive/main.zip)
 
 <!-- installation -->
 ### Basic Usages
@@ -87,25 +87,25 @@ npm run build
 
 Now you get a `theme` folder that has all the changes you have made. you can use this folder as your main theme.
 
-👉🏻 [visit documentation](https://docs.gelistirici.com/small-apps/)
+👉🏻 [visit documentation](https://docs.gelistirici.com/syrna/)
 
 <!-- reporting issue -->
 ## Reporting Issues
 
-We use GitHub Issues as the official bug tracker for the Syrna Template. Please Search [existing issues](https://github.com/gelistirici/small-apps/issues). Someone may have already reported the same problem.
-If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/gelistirici/small-apps/issues).
+We use GitHub Issues as the official bug tracker for the Syrna Template. Please Search [existing issues](https://github.com/dolunay/www.gelistirici.com/issues). Someone may have already reported the same problem.
+If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/dolunay/www.gelistirici.com/issues).
 
 <!-- support -->
 ## Technical Support or Questions (Paid)
 
-If you have questions or need help integrating the product please [contact us](mailto:mehedi@gelistirici.com) instead of opening an issue.
+If you have questions or need help integrating the product please [contact us](mailto:admin@gelistirici.com) instead of opening an issue.
 
 <!-- licence -->
 ## License
 
-Copyright (c) 2016 - Present, Designed & Developed by [Gelistirici](https://gelistirici.com)
+Copyright (c) 2025 - Present, Designed & Developed by [Gelistirici](https://gelistirici.com)
 
-**Code License:** Released under the [MIT](https://github.com/gelistirici/small-apps/blob/main/LICENSE) license.
+**Code License:** Released under the [MIT](https://github.com/dolunay/www.gelistirici.com/blob/main/LICENSE) license.
 
 **Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
 
@@ -122,3 +122,4 @@ Some third-party plugins that we used to build this template. Please check their
 * **Fancybox**: <http://fancyapps.com/fancybox/>
 * **Slick**: <https://kenwheeler.github.io/slick/>
 * **SyoTimer**: <http://syomochkin.xyz/folio/syotimer/demo.html>
+* **Cookie Consent**: <https://github.com/orestbida/cookieconsent>
