@@ -1,8 +1,9 @@
 /**
  * WEBSITE: https://gelistirici.com
- * TWITTER: https://twitter.com/gelistirici
- * FACEBOOK: https://www.facebook.com/gelistirici
- * GITHUB: https://github.com/gelistirici/
+ * TWITTER: https://x.com/gelistirici
+ * FACEBOOK: https://www.facebook.com/gelistirici.bilisim
+ * GITHUB: https://github.com/dolunay
+ * LINKEDIN: https://www.linkedin.com/in/gelistirici/
  */
 
 import "/plugins/cookieconsent/cookieconsent.umd.js";

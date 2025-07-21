@@ -56,9 +56,10 @@ gulp.task("html:build", function () {
     .pipe(
       comments(`
     WEBSITE: https://gelistirici.com
-    TWITTER: https://twitter.com/gelistirici
-    FACEBOOK: https://www.facebook.com/gelistirici
-    GITHUB: https://github.com/gelistirici/
+    TWITTER: https://x.com/gelistirici
+    FACEBOOK: https://www.facebook.com/gelistirici.bilisim
+    GITHUB: https://github.com/dolunay
+    LINKEDIN: https://www.linkedin.com/in/gelistirici/
     `)
     )
     .pipe(gulp.dest(path.build.dirDev))
@@ -84,9 +85,10 @@ gulp.task("scss:build", function () {
     .pipe(
       comments(`
     WEBSITE: https://gelistirici.com
-    TWITTER: https://twitter.com/gelistirici
-    FACEBOOK: https://www.facebook.com/gelistirici
-    GITHUB: https://github.com/gelistirici/
+    TWITTER: https://x.com/gelistirici
+    FACEBOOK: https://www.facebook.com/gelistirici.bilisim
+    GITHUB: https://github.com/dolunay
+    LINKEDIN: https://www.linkedin.com/in/gelistirici/
     `)
     )
     .pipe(gulp.dest(path.build.dirDev + "css/"))
@@ -103,10 +105,11 @@ gulp.task("js:build", function () {
     .src(path.src.js)
     .pipe(
       comments(`
-  WEBSITE: https://gelistirici.com
-  TWITTER: https://twitter.com/gelistirici
-  FACEBOOK: https://www.facebook.com/gelistirici
-  GITHUB: https://github.com/gelistirici/
+    WEBSITE: https://gelistirici.com
+    TWITTER: https://x.com/gelistirici
+    FACEBOOK: https://www.facebook.com/gelistirici.bilisim
+    GITHUB: https://github.com/dolunay
+    LINKEDIN: https://www.linkedin.com/in/gelistirici/
   `)
     )
     .pipe(gulp.dest(path.build.dirDev + "js/"))

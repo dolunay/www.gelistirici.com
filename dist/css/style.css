@@ -1,8 +1,9 @@
 /**
  * WEBSITE: https://gelistirici.com
- * TWITTER: https://twitter.com/gelistirici
- * FACEBOOK: https://www.facebook.com/gelistirici
- * GITHUB: https://github.com/gelistirici/
+ * TWITTER: https://x.com/gelistirici
+ * FACEBOOK: https://www.facebook.com/gelistirici.bilisim
+ * GITHUB: https://github.com/dolunay
+ * LINKEDIN: https://www.linkedin.com/in/gelistirici/
  */
 
 @import url("https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans:300,400,600,700,800");
@@ -586,11 +587,11 @@ button:focus,
   }
 }
 .footer-classic ul.social-icons li a {
-  padding: 0 20px;
+  padding: 0 16px;
   display: block;
 }
 .footer-classic ul.social-icons li a i {
-  font-size: 25px;
+  font-size: 22px;
   color: #000;
 }
 .footer-classic ul.footer-links li a {
