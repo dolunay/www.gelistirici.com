@@ -1,0 +1,122 @@
+@@include('header.htm')
+
+@@include('blocks/navigation.htm', {"pages" : "active", "team" : "active"})
+
+@@include('blocks/page-title.htm',{
+"title" : "Our Team",
+"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, beatae atque dolorum impedit provident
+veritatis inventore similique deserunt suscipit quae."
+})
+
+<!--==================================
+=            Feature Team            =
+===================================-->
+<section class="founders section pt-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				@@include('blocks/founder.htm',{
+				"img-src" : "images/team/featured-person-01.jpg",
+				"name" : "Celal AK",
+				"position" : "Founder & CEO",
+				"description" : "In 1983, he began researching electronic circuits and circuit elements. He decided to
+				learn coding to utilize computer technologies in the creation of complex electronic circuits.
+				<br><br>
+				In 1987, he began coding with GW Basic and Turbo Pascal.
+				<br><br>
+				In 1993, he was accepted into the Computer Programming Department of Anadolu University Eskişehir
+				Vocational School.
+				<br><br>
+				During his studies, he learned Borland Pascal 7, Turbo Vision, Delphi 7, and Visual Basic. He worked as
+				a computer instructor in private teaching institutions.
+				<br><br>
+				He developed network configurations on Linux, Novel, and Windows.
+				<br><br>
+				He was appointed to the academic staff of the school in 1996.
+				<br><br>
+				In 1997, he founded a software company with his friends to develop hotel applications.
+				<br><br>
+				In 1998, he began working as an information systems officer at ETI Pazarlama A.Ş.
+				<br><br>
+				During his time at ETI, he worked on web-based application development and desktop software development
+				using Delphi and Visual Basic.
+				<br><br>
+				He researched and implemented network technologies to enable AS400 and PC interoperability.
+				<br><br>
+				He launched the Kenthaber portal in 2003.
+				<br><br>
+				He completed his military service between 2003 and 2005.
+				<br><br>
+				During this period, he developed an interest in .Net technologies, C#, and Java.
+				<br><br>
+				He implemented Kenthaber's network infrastructure and system administration.
+				<br><br>
+				In 2014, he began working as CTO at FastSoft Software.
+				<br><br>
+				He managed the development of Supply Management software for the Public Hospitals Institution and
+				Central Purchasing and Inventory Management software for the PTT (Turkish Postal Service).
+				<br><br>
+				In 2016, he founded Geliştirme Bilişim (Developer Informatics) and developed Syrna ERP software, Syrna
+				Generator, and the Syrna Framework.
+				<br><br>
+				In 2022, he began working as a Software Team Leader at FastSoft Bilişim A.Ş.
+				<br><br>
+				He participated in the development of the Salary module in the Ministry of Health's EKIP project and the
+				Environmental Health Information System project for the General Directorate of Public Health.
+				<br><br>
+				He currently serves as CTO at FastSoft.
+				"
+				})
+			</div>
+		</div>
+	</div>
+</section>
+<!--====  End of Feature Team  ====-->
+
+<!--=================================
+=            Design Team            =
+==================================-->
+<section class="design-team section pt-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="section-title">
+					<h2>Development Team</h2>
+					<p><a href="/products/syrna/">Syrna</a> makes it easy to stay on top of your Life Style. No late tasks. No gimmicks.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-6">
+				@@include('blocks/team-sm.htm',{
+					"img-src"		: "images/team/user-not-found.png",
+					"name"			: "Empty",
+					"position"		: "Lead Of Development",
+					"description"	: "."
+				})
+			</div>
+			<div class="col-lg-4 col-md-6">
+				@@include('blocks/team-sm.htm',{
+					"img-src"		: "images/team/user-not-found.png",
+					"name"			: "Empty",
+					"position"		: "Developer",
+					"description"	: "."
+				})
+			</div>
+			<div class="col-lg-4 col-md-6">
+				@@include('blocks/team-sm.htm',{
+					"img-src"		: "images/team/user-not-found.png",
+					"name"			: "Empty",
+					"position"		: "Developer",
+					"description"	: "."
+				})
+			</div>
+		</div>
+	</div>
+</section>
+
+@@include('blocks/cta-hire.htm')
+
+@@include('blocks/footer.htm')
+
+@@include('footer.htm')

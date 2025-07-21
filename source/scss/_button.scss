@@ -1,0 +1,81 @@
+@use "variables";
+
+.btn {
+  text-transform: uppercase;
+}
+
+.btn-download {
+  padding: 20px 35px;
+  font-size: 14px;
+  background: variables.$light;
+  color: variables.$primary-color;
+
+  span {
+    margin-left: 5px;
+    font-size: 20px;
+  }
+}
+
+.btn-main {
+  padding: 25px 45px;
+  border-radius: 3px;
+  background: variables.$primary-color;
+  color: variables.$light;
+  outline: none;
+
+  &:hover {
+    color: variables.$light;
+  }
+
+  &:focus {
+    color: variables.$light;
+    box-shadow: none;
+  }
+}
+
+.btn-main-md {
+  padding: 17px 38px;
+  border-radius: 3px;
+  background: variables.$primary-color;
+  color: variables.$light;
+  outline: none;
+
+  &:hover {
+    color: variables.$light;
+  }
+
+  &:focus {
+    color: variables.$light;
+    box-shadow: none;
+  }
+}
+
+.btn-main-sm {
+  padding: 15px 35px;
+  border-radius: 3px;
+  background: variables.$primary-color;
+  color: variables.$light;
+  outline: none;
+  font-size: 14px;
+
+  &:hover {
+    color: variables.$light;
+  }
+
+  &:focus {
+    color: variables.$light;
+    box-shadow: none;
+  }
+}
+
+.btn-white {
+  background: white;
+  color: variables.$primary-color;
+}
+
+.btn-rounded-icon {
+  border-radius: 100px;
+  color: variables.$light;
+  border: 1px solid variables.$light;
+  padding: 13px 50px;
+}
