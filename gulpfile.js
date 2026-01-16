@@ -7,6 +7,8 @@ import comments from 'gulp-header-comment';
 import htmlmin from 'gulp-htmlmin';
 import gulpSass from 'gulp-sass';
 import sourcemaps from 'gulp-sourcemaps';
+import fs from 'node:fs/promises';
+import nodePath from 'node:path';
 import rimraf from 'rimraf';
 
 //import imagemin from 'gulp-imagemin';
@@ -44,6 +46,78 @@ var path = {
     dirDev: "dist/",
   },
 };
+
+const SITE_URL = "https://www.gelistirici.com";
+
+async function walkHtmlFiles(dirAbs, baseAbs) {
+  const entries = await fs.readdir(dirAbs, { withFileTypes: true });
+  const results = [];
+  for (const entry of entries) {
+    const abs = nodePath.join(dirAbs, entry.name);
+    if (entry.isDirectory()) {
+      results.push(...(await walkHtmlFiles(abs, baseAbs)));
+      continue;
+    }
+    if (entry.isFile() && entry.name.toLowerCase().endsWith('.html')) {
+      results.push(abs.substring(baseAbs.length + 1));
+    }
+  }
+  return results;
+}
+
+function sitemapLocFromRelPath(relPath) {
+  const normalized = relPath.replace(/\\/g, '/');
+  if (normalized === 'index.html') {
+    return SITE_URL + '/';
+  }
+  if (normalized.endsWith('/index.html')) {
+    return SITE_URL + '/' + normalized.slice(0, -'index.html'.length);
+  }
+  return SITE_URL + '/' + normalized;
+}
+
+async function isNoIndexHtml(distAbs, relPath) {
+  try {
+    const html = await fs.readFile(nodePath.join(distAbs, relPath), 'utf8');
+    return /<meta\s+name=["']robots["']\s+content=["'][^"']*noindex/i.test(html);
+  } catch {
+    return false;
+  }
+}
+
+gulp.task('seo:build', function () {
+  const distAbs = nodePath.resolve('dist');
+  return (async () => {
+    const files = await walkHtmlFiles(distAbs, distAbs);
+    files.sort();
+    const lastmod = new Date().toISOString().slice(0, 10);
+    const includedFiles = [];
+    for (const file of files) {
+      if (await isNoIndexHtml(distAbs, file)) {
+        continue;
+      }
+      includedFiles.push(file);
+    }
+
+    const urls = includedFiles
+      .map((f) => ({ loc: sitemapLocFromRelPath(f), lastmod }))
+      // Avoid duplicates when both /tr/index.html and /tr/ resolve similarly.
+      .filter((value, index, array) => array.findIndex((x) => x.loc === value.loc) === index);
+
+    const xml =
+      '<?xml version="1.0" encoding="UTF-8"?>\n' +
+      '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+      urls
+        .map((u) => `  <url><loc>${u.loc}</loc><lastmod>${u.lastmod}</lastmod></url>`)
+        .join('\n') +
+      '\n</urlset>\n';
+
+    const robots = `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`;
+
+    await fs.writeFile(nodePath.join(distAbs, 'sitemap.xml'), xml, 'utf8');
+    await fs.writeFile(nodePath.join(distAbs, 'robots.txt'), robots, 'utf8');
+  })();
+});
 
 // HTML
 gulp.task("html:build", function () {
@@ -200,6 +274,7 @@ gulp.task(
     "imagemin:build",
     "plugins:build",
     "others:build",
+    "seo:build",
     gulp.parallel("watch:build", function () {
       bs.init({
         server: {
@@ -220,6 +295,7 @@ gulp.task(
     "scss:build",
     //"images:build",
     "imagemin:build",
-    "plugins:build"
+    "plugins:build",
+    "seo:build"
   )
 );

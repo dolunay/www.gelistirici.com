@@ -6,7 +6,7 @@
   <!-- Basic Page Needs
   ================================================== -->
   <meta charset="utf-8">
-  <title>Geliştirici Bilişim</title>
+  <title>@@if (typeof title !== 'undefined') {@@title}@@if (typeof title === 'undefined') {Geliştirici Bilişim}</title>
 
   <link rel="canonical" href="@@site/@@canonicalPath" />
   <link rel="alternate" hreflang="tr" href="@@site/@@trPath" />
@@ -16,10 +16,30 @@
   <!-- Mobile Specific Metas
   ================================================== -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="@@if (lang === 'tr') { Geliştirici Bilişim — Yazılım çözümleri, demo uygulamalar ve destek. }@@if (lang !== 'tr') { Bootstrap App Landing Template }">
+  <meta name="description" content="@@if (typeof metaDescription !== 'undefined') {@@metaDescription}@@if (typeof metaDescription === 'undefined') {@@if (lang === 'tr') {Geliştirici Bilişim — Yazılım çözümleri, demo uygulamalar ve destek.}@@if (lang !== 'tr') {Geliştirici Bilişim — Software solutions, demos and support.}}">
+  <meta name="robots" content="@@if (typeof robots !== 'undefined') {@@robots}@@if (typeof robots === 'undefined') {index,follow}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <meta name="author" content="Gelistirici">
+  <meta name="author" content="Geliştirici Bilişim">
   <meta name="generator" content="Gelistirici Syrna Template v1.0">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:site_name" content="Geliştirici Bilişim">
+  <meta property="og:type" content="@@if (typeof ogType !== 'undefined') {@@ogType}@@if (typeof ogType === 'undefined') {website}">
+  <meta property="og:url" content="@@site/@@canonicalPath">
+  <meta property="og:title" content="@@if (typeof title !== 'undefined') {@@title}@@if (typeof title === 'undefined') {Geliştirici Bilişim}">
+  <meta property="og:description" content="@@if (typeof metaDescription !== 'undefined') {@@metaDescription}@@if (typeof metaDescription === 'undefined') {@@if (lang === 'tr') {Geliştirici Bilişim — Yazılım çözümleri, demo uygulamalar ve destek.}@@if (lang !== 'tr') {Geliştirici Bilişim — Software solutions, demos and support.}}">
+  <meta property="og:image" content="@@if (typeof ogImage !== 'undefined') {@@ogImage}@@if (typeof ogImage === 'undefined') {@@site/@@lang/images/logo.png}">
+  <meta property="og:locale" content="@@if (lang === 'tr') {tr_TR}@@if (lang !== 'tr') {en_US}">
+  <meta property="og:locale:alternate" content="@@if (lang === 'tr') {en_US}@@if (lang !== 'tr') {tr_TR}">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@gelistirici">
+  <meta name="twitter:title" content="@@if (typeof title !== 'undefined') {@@title}@@if (typeof title === 'undefined') {Geliştirici Bilişim}">
+  <meta name="twitter:description" content="@@if (typeof metaDescription !== 'undefined') {@@metaDescription}@@if (typeof metaDescription === 'undefined') {@@if (lang === 'tr') {Geliştirici Bilişim — Yazılım çözümleri, demo uygulamalar ve destek.}@@if (lang !== 'tr') {Geliştirici Bilişim — Software solutions, demos and support.}}">
+  <meta name="twitter:image" content="@@if (typeof ogImage !== 'undefined') {@@ogImage}@@if (typeof ogImage === 'undefined') {@@site/@@lang/images/logo.png}">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Geliştirici Bilişim","url":"@@site/","logo":"@@site/@@lang/images/logo.png","sameAs":["https://x.com/gelistirici","https://www.facebook.com/gelistirici.bilisim","https://github.com/dolunay","https://www.linkedin.com/in/gelistirici/"]},{"@type":"WebSite","name":"Geliştirici Bilişim","url":"@@site/","inLanguage":"@@if (lang === 'tr') {tr-TR}@@if (lang !== 'tr') {en-US}"}]}</script>
 
   <!-- theme meta -->
   <meta name="theme-name" content="syrna" />

@@ -4,32 +4,32 @@ command = "npm run build"
 
 [[redirects]]
 from = "/about.html"
-to = "/tr/about.html"
+to = "/tr/hakkimizda.html"
 status = 301
 
 [[redirects]]
 from = "/contact.html"
-to = "/tr/contact.html"
+to = "/tr/iletisim.html"
 status = 301
 
 [[redirects]]
 from = "/privacy.html"
-to = "/tr/privacy.html"
+to = "/tr/gizlilik-politikasi.html"
 status = 301
 
 [[redirects]]
 from = "/terms.html"
-to = "/tr/terms.html"
+to = "/tr/kullanim-kosullari.html"
 status = 301
 
 [[redirects]]
 from = "/FAQ.html"
-to = "/tr/FAQ.html"
+to = "/tr/sik-sorulan-sorular.html"
 status = 301
 
 [[redirects]]
 from = "/team.html"
-to = "/tr/team.html"
+to = "/tr/ekibimiz.html"
 status = 301
 
 [[redirects]]
@@ -39,27 +39,27 @@ status = 301
 
 [[redirects]]
 from = "/blog-single.html"
-to = "/tr/blog-single.html"
+to = "/tr/blog-yazisi.html"
 status = 301
 
 [[redirects]]
 from = "/career.html"
-to = "/tr/career.html"
+to = "/tr/kariyer.html"
 status = 301
 
 [[redirects]]
 from = "/comming-soon.html"
-to = "/tr/comming-soon.html"
+to = "/tr/yakinda.html"
 status = 301
 
 [[redirects]]
 from = "/homepage-2.html"
-to = "/tr/homepage-2.html"
+to = "/tr/urun-tanitimi.html"
 status = 301
 
 [[redirects]]
 from = "/homepage-3.html"
-to = "/tr/homepage-3.html"
+to = "/tr/surec-yonetimi.html"
 status = 301
 
 [[redirects]]
@@ -69,17 +69,82 @@ status = 301
 
 [[redirects]]
 from = "/sign-in.html"
-to = "/tr/sign-in.html"
+to = "/tr/giris.html"
 status = 301
 
 [[redirects]]
 from = "/sign-up.html"
-to = "/tr/sign-up.html"
+to = "/tr/kayit.html"
 status = 301
 
 [[redirects]]
 from = "/404.html"
 to = "/tr/404.html"
+status = 301
+
+[[redirects]]
+from = "/tr/about.html"
+to = "/tr/hakkimizda.html"
+status = 301
+
+[[redirects]]
+from = "/tr/contact.html"
+to = "/tr/iletisim.html"
+status = 301
+
+[[redirects]]
+from = "/tr/privacy.html"
+to = "/tr/gizlilik-politikasi.html"
+status = 301
+
+[[redirects]]
+from = "/tr/terms.html"
+to = "/tr/kullanim-kosullari.html"
+status = 301
+
+[[redirects]]
+from = "/tr/FAQ.html"
+to = "/tr/sik-sorulan-sorular.html"
+status = 301
+
+[[redirects]]
+from = "/tr/team.html"
+to = "/tr/ekibimiz.html"
+status = 301
+
+[[redirects]]
+from = "/tr/blog-single.html"
+to = "/tr/blog-yazisi.html"
+status = 301
+
+[[redirects]]
+from = "/tr/career.html"
+to = "/tr/kariyer.html"
+status = 301
+
+[[redirects]]
+from = "/tr/comming-soon.html"
+to = "/tr/yakinda.html"
+status = 301
+
+[[redirects]]
+from = "/tr/homepage-2.html"
+to = "/tr/urun-tanitimi.html"
+status = 301
+
+[[redirects]]
+from = "/tr/homepage-3.html"
+to = "/tr/surec-yonetimi.html"
+status = 301
+
+[[redirects]]
+from = "/tr/sign-in.html"
+to = "/tr/giris.html"
+status = 301
+
+[[redirects]]
+from = "/tr/sign-up.html"
+to = "/tr/kayit.html"
 status = 301
 
 [[headers]]
