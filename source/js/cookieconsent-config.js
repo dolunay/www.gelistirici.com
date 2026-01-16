@@ -1,7 +1,9 @@
-import "/plugins/cookieconsent/cookieconsent.umd.js";
+import "../plugins/cookieconsent/cookieconsent.umd.js";
 
 // Enable dark mode
 document.documentElement.classList.add('cc--darkmode');
+
+const defaultLang = (window.location.pathname || '').startsWith('/en/') ? 'en' : 'tr';
 
 CookieConsent.run({
     guiOptions: {
@@ -25,7 +27,7 @@ CookieConsent.run({
         analytics: {}
     },
     language: {
-        default: "en",
+        default: defaultLang,
         autoDetect: "browser",
         translations: {
             en: {
@@ -61,7 +63,45 @@ CookieConsent.run({
                         },
                         {
                             title: "More information",
-                            description: "For any query in relation to my policy on cookies and your choices, please <a class=\"cc__link\" href=\"gelistirici.com/contact.html\">contact me</a>."
+                            description: "For any query in relation to my policy on cookies and your choices, please <a class=\"cc__link\" href=\"contact.html\">contact me</a>."
+                        }
+                    ]
+                }
+            },
+            tr: {
+                consentModal: {
+                    title: "Merhaba! Çerez zamanı",
+                    description: "Deneyiminizi iyileştirmek, içerikleri kişiselleştirmek ve trafiğimizi analiz etmek için çerezler kullanıyoruz.",
+                    acceptAllBtn: "Tümünü kabul et",
+                    acceptNecessaryBtn: "Tümünü reddet",
+                    showPreferencesBtn: "Tercihleri yönet",
+                    footer: "<a href=\"privacy.html\">Gizlilik Politikası</a>\n<a href=\"terms.html\">Şartlar ve Koşullar</a>"
+                },
+                preferencesModal: {
+                    title: "Çerez Tercih Merkezi",
+                    acceptAllBtn: "Tümünü kabul et",
+                    acceptNecessaryBtn: "Tümünü reddet",
+                    savePreferencesBtn: "Tercihleri kaydet",
+                    closeIconLabel: "Pencereyi kapat",
+                    serviceCounterLabel: "Servis|Servisler",
+                    sections: [
+                        {
+                            title: "Çerez Kullanımı",
+                            description: "Çerezler, bir web sitesini ziyaret ettiğinizde cihazınıza kaydedilen küçük metin dosyalarıdır. Çeşitli amaçlarla ve (ör. oturum bilgilerini hatırlamak gibi) deneyiminizi iyileştirmek için kullanılır. Tercihlerinizi değiştirerek bazı çerez türlerini reddedebilirsiniz. Mevcut çerezleri silebilirsiniz; ancak bu işlem sitenin bazı bölümlerinin çalışmasını engelleyebilir."
+                        },
+                        {
+                            title: "Kesinlikle Gerekli Çerezler <span class=\"pm__badge\">Her Zaman Etkin</span>",
+                            description: "Bu çerezler, sitedeki temel işlevlerin çalışması için gereklidir. Bu çerezler olmadan belirli hizmetleri sunamayız.",
+                            linkedCategory: "necessary"
+                        },
+                        {
+                            title: "Analitik Çerezler",
+                            description: "Bu çerezler, site kullanımını analiz etmeye ve performansı iyileştirmeye yardımcı olur.",
+                            linkedCategory: "analytics"
+                        },
+                        {
+                            title: "Daha fazla bilgi",
+                            description: "Çerez politikamız ve tercihlerinizle ilgili sorularınız için lütfen <a class=\"cc__link\" href=\"contact.html\">bizimle iletişime geçin</a>."
                         }
                     ]
                 }

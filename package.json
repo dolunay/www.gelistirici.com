@@ -14,11 +14,14 @@
     "gulp": "^5.0.1",
     "gulp-autoprefixer": "^9.0.0",
     "gulp-file-include": "^2.3.0",
+    "gulp-header-comment": "^0.10.0",
     "gulp-imagemin": "^9.1.0",
     "gulp-rimraf": "^1.0.0",
     "gulp-sass": "^6.0.1",
     "gulp-sourcemaps": "^3.0.0",
-    "gulp-header-comment": "^0.10.0",
     "sass": "^1.89.2"
+  },
+  "devDependencies": {
+    "gulp-htmlmin": "^5.0.1"
   }
 }

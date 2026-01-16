@@ -1,0 +1,158 @@
+@@include('header.htm', {"lang":"tr","site":"https://www.gelistirici.com","canonicalPath":"tr/blog.html","trPath":"tr/blog.html","enPath":"en/blog.html"})
+
+@@include('blocks/navigation.htm', {"lang":"tr", "pages" : "active", "blog" : "active", "page":"blog.html", "altBase":"../en/", "altLabel":"EN"})
+
+@@include('blocks/page-title.htm',{"title" : "Blog","description" : "Yazılım geliştirme, ürün güncellemeleri ve topluluk duyurularını burada paylaşıyoruz. Kısa notlar, derinlemesine yazılar ve pratik ipuçları."})
+<!--======================================
+=            Featured Article            =
+=======================================-->
+<section class="section featured-article">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<article class="featured">
+					<!-- Image -->
+					<div class="image">
+						<a href="blog-single.html"><img class="img-fluid" src="images/feature/featured-article.jpg"
+								alt="öne çıkan yazı"></a>
+					</div>
+					<!-- written-content -->
+					<div class="content">
+						<!-- Post Title -->
+						<h2><a href="blog-single.html">Yeni iOS Uygulamamızı Tanıtıyoruz</a></h2>
+						<!-- Tags -->
+						<ul class="list-inline post-tag">
+							<li class="list-inline-item">
+								<img class="img-fluid" src="images/testimonial/feature-testimonial-thumb.jpg"
+									alt="yazar görseli">
+							</li>
+							<li class="list-inline-item">
+								<a href="#">Thomas Johnson</a>
+							</li>
+							<li class="list-inline-item">
+								8 Ağustos 2017
+							</li>
+						</ul>
+						<!-- Post Body -->
+						<p>Bu yazıda yeni iOS uygulamamızın öne çıkan özelliklerini, geliştirme sürecinde öğrendiklerimizi
+							ve sıradaki adımlarımızı paylaşıyoruz. Performans, tasarım ve kullanıcı deneyimi tarafında neler
+							değiştiğine hızlı bir bakış.</p>
+						<a class="btn btn-main-sm" href="blog-single.html">Devamını oku</a>
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Featured Article  ====-->
+<section class="post-grid section pt-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-6">
+				@@include('blocks/article.htm',{"lang":"tr",
+				"img-src" : "images/blog/post-01.jpg",
+				"post-title" : "Yenilik, lideri takipçiden ayırır.",
+				"author" : "Geliştirici Ekibi",
+				"date" : "8 Ağustos 2017",
+				"excerpt" : "Küçük ama sürekli iyileştirmelerle büyük farklar yaratmanın yolları."
+				})
+			</div>
+			<div class="col-lg-4 col-md-6">
+				@@include('blocks/article.htm',{"lang":"tr",
+				"img-src" : "images/blog/post-02.jpg",
+				"post-title" : "Tasarım yalnızca nasıl göründüğü ve hissettirdiği değildir; nasıl çalıştığıdır.",
+				"author" : "Geliştirici Ekibi",
+				"date" : "8 Ağustos 2017",
+				"excerpt" : "Kullanıcı deneyimini ölçmek ve iyileştirmek için pratik yaklaşımlar."
+				})
+			</div>
+			<div class="col-lg-4 col-md-6">
+				@@include('blocks/article.htm',{"lang":"tr",
+				"img-src" : "images/blog/post-03.jpg",
+				"post-title" : "Tasarım yalnızca nasıl göründüğü ve hissettirdiği değildir; nasıl çalıştığıdır.",
+				"author" : "Geliştirici Ekibi",
+				"date" : "8 Ağustos 2017",
+				"excerpt" : "Sürdürülebilir tasarım sistemleri ve ekip içi tutarlılık."
+				})
+			</div>
+			<div class="col-lg-4 col-md-6">
+				@@include('blocks/article.htm',{"lang":"tr",
+				"img-src" : "images/blog/post-01.jpg",
+				"post-title" : "Yenilik, lideri takipçiden ayırır.",
+				"author" : "Geliştirici Ekibi",
+				"date" : "8 Ağustos 2017",
+				"excerpt" : "Ürün geliştirmede küçük kazanımların etkisi."
+				})
+			</div>
+			<div class="col-lg-4 col-md-6">
+				@@include('blocks/article.htm',{"lang":"tr",
+				"img-src" : "images/blog/post-02.jpg",
+				"post-title" : "Tasarım yalnızca nasıl göründüğü ve hissettirdiği değildir; nasıl çalıştığıdır.",
+				"author" : "Geliştirici Ekibi",
+				"date" : "8 Ağustos 2017",
+				"excerpt" : "Arayüz kararlarını veriye bağlamak için öneriler."
+				})
+			</div>
+			<div class="col-lg-4 col-md-6">
+				@@include('blocks/article.htm',{"lang":"tr",
+				"img-src" : "images/blog/post-03.jpg",
+				"post-title" : "Tasarım yalnızca nasıl göründüğü ve hissettirdiği değildir; nasıl çalıştığıdır.",
+				"author" : "Geliştirici Ekibi",
+				"date" : "8 Ağustos 2017",
+				"excerpt" : "UI bileşenleriyle hızlı prototipleme ipuçları."
+				})
+			</div>
+			<div class="col-12">
+				@@include('blocks/cta-community.htm', {"lang":"tr"})
+			</div>
+			<div class="col-lg-4 col-md-6">
+				@@include('blocks/article.htm',{"lang":"tr",
+				"img-src" : "images/blog/post-01.jpg",
+				"post-title" : "Yenilik, lideri takipçiden ayırır.",
+				"author" : "Geliştirici Ekibi",
+				"date" : "8 Ağustos 2017",
+				"excerpt" : "Küçük ekiplerde süreç yönetimi pratikleri."
+				})
+			</div>
+			<div class="col-lg-4 col-md-6">
+				@@include('blocks/article.htm',{"lang":"tr",
+				"img-src" : "images/blog/post-02.jpg",
+				"post-title" : "Tasarım yalnızca nasıl göründüğü ve hissettirdiği değildir; nasıl çalıştığıdır.",
+				"author" : "Geliştirici Ekibi",
+				"date" : "8 Ağustos 2017",
+				"excerpt" : "Kaliteyi artırmak için kontrol listeleri."
+				})
+			</div>
+			<div class="col-lg-4 col-md-6">
+				@@include('blocks/article.htm',{"lang":"tr",
+				"img-src" : "images/blog/post-03.jpg",
+				"post-title" : "Tasarım yalnızca nasıl göründüğü ve hissettirdiği değildir; nasıl çalıştığıdır.",
+				"author" : "Geliştirici Ekibi",
+				"date" : "8 Ağustos 2017",
+				"excerpt" : "Geliştirme hızını düşürmeden teknik borç yönetimi."
+				})
+			</div>
+			<div class="col-12">
+				<!-- Pagination -->
+				<nav class="pagination-nav">
+					<ul class="pagination">
+						<li class="page-item active"><a class="page-link" href="#">1</a></li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Next">
+								<span aria-hidden="true"><i class="ti-angle-right"></i></span>
+								<span class="sr-only">Sonraki</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</section>
+
+@@include('blocks/footer.htm', {"lang":"tr"})
+
+@@include('footer.htm')

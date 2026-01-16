@@ -4,6 +4,7 @@ import gulp from 'gulp';
 import autoprefixer from 'gulp-autoprefixer';
 import fileinclude from 'gulp-file-include';
 import comments from 'gulp-header-comment';
+import htmlmin from 'gulp-htmlmin';
 import gulpSass from 'gulp-sass';
 import sourcemaps from 'gulp-sourcemaps';
 import rimraf from 'rimraf';
@@ -29,7 +30,7 @@ const bs = bst.create();
 
 var path = {
   src: {
-    html: "source/*.html",
+    html: ["source/index.html", "source/tr/*.html", "source/en/*.html"],
     others: "source/*.+(php|ico|png)",
     htminc: "source/partials/**/*.htm",
     incdir: "source/partials/",
@@ -47,10 +48,16 @@ var path = {
 // HTML
 gulp.task("html:build", function () {
   return gulp
-    .src(path.src.html)
+    .src(path.src.html, { base: "source" })
     .pipe(
       fileinclude({
         basepath: path.src.incdir,
+      })
+    )
+    .pipe(
+      htmlmin({
+        collapseWhitespace: false,
+        removeComments: true,
       })
     )
     .pipe(
@@ -91,7 +98,8 @@ gulp.task("scss:build", function () {
     LINKEDIN: https://www.linkedin.com/in/gelistirici/
     `)
     )
-    .pipe(gulp.dest(path.build.dirDev + "css/"))
+    .pipe(gulp.dest(path.build.dirDev + "tr/css/"))
+    .pipe(gulp.dest(path.build.dirDev + "en/css/"))
     .pipe(
       bs.reload({
         stream: true,
@@ -112,7 +120,8 @@ gulp.task("js:build", function () {
     LINKEDIN: https://www.linkedin.com/in/gelistirici/
   `)
     )
-    .pipe(gulp.dest(path.build.dirDev + "js/"))
+    .pipe(gulp.dest(path.build.dirDev + "tr/js/"))
+    .pipe(gulp.dest(path.build.dirDev + "en/js/"))
     .pipe(
       bs.reload({
         stream: true,
@@ -124,7 +133,8 @@ gulp.task("js:build", function () {
 gulp.task('imagemin:build', function () {
   return gulp.src('source/images/**/*', {encoding: false})
     //.pipe(imagemin())
-    .pipe(gulp.dest('dist/images/'))
+    .pipe(gulp.dest('dist/tr/images/'))
+    .pipe(gulp.dest('dist/en/images/'))
 });
 
 // Images
@@ -144,7 +154,8 @@ gulp.task("images:build", function () {
 gulp.task("plugins:build", function () {
   return gulp
     .src(path.src.plugins, {encoding: false})
-    .pipe(gulp.dest(path.build.dirDev + "plugins/"))
+    .pipe(gulp.dest(path.build.dirDev + "tr/plugins/"))
+    .pipe(gulp.dest(path.build.dirDev + "en/plugins/"))
     .pipe(
       bs.reload({
         stream: true,
@@ -154,7 +165,11 @@ gulp.task("plugins:build", function () {
 
 // Other files like favicon, php, sourcele-icon on root directory
 gulp.task("others:build", function () {
-  return gulp.src(path.src.others).pipe(gulp.dest(path.build.dirDev));
+  return gulp
+    .src(path.src.others)
+    .pipe(gulp.dest(path.build.dirDev))
+    .pipe(gulp.dest(path.build.dirDev + "tr/"))
+    .pipe(gulp.dest(path.build.dirDev + "en/"));
 });
 
 // Clean Build Folder
@@ -199,6 +214,7 @@ gulp.task(
 gulp.task(
   "build",
   gulp.series(
+    "clean",
     "html:build",
     "js:build",
     "scss:build",

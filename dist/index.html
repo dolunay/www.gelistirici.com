@@ -11,586 +11,112 @@
 <html lang="en">
 
 <head>
-
-  <!-- Basic Page Needs
-  ================================================== -->
   <meta charset="utf-8">
-  <title>Geliştirici Bilişim</title>
+  <title>Geliştirici Bilişim — Language</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
 
-  <!-- Mobile Specific Metas
-  ================================================== -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Bootstrap App Landing Template">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <meta name="author" content="Gelistirici">
-  <meta name="generator" content="Gelistirici Syrna Template v1.0">
+  <link rel="canonical" href="https://www.gelistirici.com/">
+  <link rel="alternate" hreflang="tr" href="https://www.gelistirici.com/tr/">
+  <link rel="alternate" hreflang="en" href="https://www.gelistirici.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://www.gelistirici.com/">
 
-  <!-- theme meta -->
-  <meta name="theme-name" content="syrna" />
+  <link rel="stylesheet" href="tr/plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="tr/css/style.css">
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+  <style>
+    .lang-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 48px 0;
+    }
 
-  <!-- PLUGINS CSS STYLE -->
-  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
-  <link rel="stylesheet" href="plugins/slick/slick.css">
-  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
-  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="plugins/aos/aos.css">
+    .lang-card {
+      max-width: 680px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.96);
+      border-radius: 18px;
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+      padding: 32px;
+    }
 
-  <!-- CUSTOM CSS -->
-  <link href="css/style.css" rel="stylesheet">
-    <!-- Load plugin css -->
-    <link rel="stylesheet" href="plugins/cookieconsent/cookieconsent.css">
+    .lang-logo {
+      width: 170px;
+      height: auto;
+    }
+
+    .lang-actions a {
+      min-width: 220px;
+    }
+
+    @media (max-width: 575.98px) {
+      .lang-card {
+        padding: 22px;
+      }
+
+      .lang-actions a {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 
-<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
-
-<nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0">
-  <div class="container">
-    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="ti-menu"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="/">Home</a>
-        </li>
-        <li class="nav-item dropdown @@pages">
-          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Pages
-            <span><i class="ti-angle-down"></i></span>
-          </a>
-          <!-- Dropdown list -->
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item @@team" href="team.html">Team</a></li>
-            <!-- <li><a class="dropdown-item @@career" href="career.html">Career</a></li> -->
-            <!-- <li><a class="dropdown-item @@blog" href="blog.html">Blog</a></li> -->
-            <!-- <li><a class="dropdown-item @@blogSingle" href="blog-single.html">Blog Single</a></li> -->
-            <li><a class="dropdown-item @@privacy" href="privacy.html">Privacy</a></li>
-            <li><a class="dropdown-item @@terms" href="terms.html">Terms & Conditions</a></li>
-            <li><a class="dropdown-item @@faq" href="FAQ.html">FAQ</a></li>
-            <!-- <li><a class="dropdown-item" href="sign-in.html">Sign In</a></li> -->
-            <!-- <li><a class="dropdown-item" href="sign-up.html">Sign Up</a></li> -->
-            <!-- <li><a class="dropdown-item" href="404.html">404</a></li> -->
-            <!-- <li><a class="dropdown-item" href="comming-soon.html">Coming Soon</a></li> -->
-
-            <!-- <li class="dropdown dropdown-submenu dropleft">
-              <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0501" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
-
-              <ul class="dropdown-menu" aria-labelledby="dropdown0501">
-                <li><a class="dropdown-item" href="index.html">Submenu 21</a></li>
-                <li><a class="dropdown-item" href="index.html">Submenu 22</a></li>
-              </ul>
-            </li> -->
-            <li><a class="dropdown-item @@product_info" href="https://www.facebook.com/gelistirici.bilisim/">Product Info</a></li>
-            <li><a class="dropdown-item @@demo_site" href="http://demo.gelistirici.com">Demo Application</a></li>
-          </ul>
-        </li>
-        <li class="nav-item @@about">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item @@contact">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!--====================================
-=            Hero Section            =
-=====================================-->
-<section class="section gradient-banner">
-	<div class="shapes-container">
-		<div class="shape" data-aos="fade-down-left" data-aos-duration="1500" data-aos-delay="100"></div>
-		<div class="shape" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100"></div>
-		<div class="shape" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="200"></div>
-		<div class="shape" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"></div>
-		<div class="shape" data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="100"></div>
-		<div class="shape" data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="100"></div>
-		<div class="shape" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300"></div>
-		<div class="shape" data-aos="fade-down-right" data-aos-duration="500" data-aos-delay="200"></div>
-		<div class="shape" data-aos="fade-down-right" data-aos-duration="500" data-aos-delay="100"></div>
-		<div class="shape" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="500"></div>
-		<div class="shape" data-aos="fade-up-right" data-aos-duration="500" data-aos-delay="200"></div>
-		<div class="shape" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="100"></div>
-		<div class="shape" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0"></div>
-		<div class="shape" data-aos="fade-down" data-aos-duration="500" data-aos-delay="0"></div>
-		<div class="shape" data-aos="fade-up-right" data-aos-duration="500" data-aos-delay="100"></div>
-		<div class="shape" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="0"></div>
-	</div>
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-md-6 order-2 order-md-1 text-center text-md-left">
-				<h1 class="text-white font-weight-bold mb-4">Showcase your app with Syrna</h1>
-				<p class="text-white mb-5">Besides its beautiful design. Syrna is an incredibly rich core framework for
-					you to showcase your App.</p>
-				<a href="FAQ.html" class="btn btn-main-md">Download Now</a>
-			</div>
-			<div class="col-md-6 text-center order-1 order-md-2">
-				<img class="img-fluid" src="images/mobile.png" alt="screenshot">
-			</div>
-		</div>
-	</div>
-</section>
-<!--====  End of Hero Section  ====-->
-
-<section class="section pt-0 position-relative pull-top">
-	<div class="container">
-		<div class="rounded shadow p-5 bg-white">
-			<div class="row">
-				<div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
-					<i class="ti-paint-bucket text-primary h1"></i>
-					<h3 class="mt-4 text-capitalize h5 ">UI/UX made easy</h3>
-					<p class="regular text-muted">Many pre-built themes are available, allowing for customization as
-						needed, while industry-standard client design simplifies application development.</p>
-				</div>
-				<div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
-					<i class="ti-shine text-primary h1"></i>
-					<h3 class="mt-4 text-capitalize h5 ">powerful architecture</h3>
-					<p class="regular text-muted">It is very easy to achieve Platform, Database and Client independent
-						results thanks to powerful architectural features when developing applications and modules.</p>
-				</div>
-				<div class="col-lg-4 col-md-12 mt-5 mt-lg-0 text-center">
-					<i class="ti-thought text-primary h1"></i>
-					<h3 class="mt-4 text-capitalize h5 ">easy data management</h3>
-					<p class="regular text-muted">CRUD operations and reporting operations can be performed easily
-						thanks to the advanced structures provided for data management.</p>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!--==================================
-=            Feature Grid            =
-===================================-->
-<section class="feature section pt-0">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 ml-auto justify-content-center">
-				<!-- Feature Mockup -->
-				<div class="image-content" data-aos="fade-right">
-					<img class="img-fluid" src="images/feature/feature-new-01.jpg" alt="iphone">
-				</div>
-			</div>
-			<div class="col-lg-6 mr-auto align-self-center">
-				<div class="feature-content">
-					<!-- Feature Title -->
-					<h2>Increase your productivity with <a href="/products/syrna/">Syrna</a>
-					</h2>
-					<!-- Feature Description -->
-					<p class="desc">It includes the dynamic reporting and dashboard tools you need to manage your
-						business. Additionally, there's a Scheduled Tasks app for data or reports you constantly
-						monitor.</p>
-				</div>
-				<!-- Testimonial Quote -->
-				<!--
-				<div class="testimonial">
-					<p>
-						"InVision is a window into everything that's being designed at Twitter. It gets all of our best
-						work in one
-						place."
-					</p>
-					<ul class="list-inline meta">
-						<li class="list-inline-item">
-							<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="">
-						</li>
-						<li class="list-inline-item">Jonathon Andrew , Gelistirici.com</li>
-					</ul>
-				</div>
-			-->
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="feature section pt-0">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 ml-auto align-self-center">
-				<div class="feature-content">
-					<!-- Feature Title -->
-					<h2>Increase your productivity with <a href="/products/syrna/">Syrna</a>
-					</h2>
-					<!-- Feature Description -->
-					<p>Lists, reports, and even Scheduled Tasks results can be shared via SMS, email, WhatsApp, and
-						other platforms. Additionally, data can be exported and imported in Excel, CSV, JSON, PDF, and
-						other formats through visual fields like Lists and Reports. Advanced filtering features are
-						standard in all applications.</p>
-				</div>
-				<!-- Testimonial Quote -->
-				<!--
-				<div class="testimonial">
-					<p>
-						"InVision is a window into everything that's being designed at Twitter. It gets all of our best
-						work in one
-						place."
-					</p>
-					<ul class="list-inline meta">
-						<li class="list-inline-item">
-							<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="">
-						</li>
-						<li class="list-inline-item">Jonathon Andrew , Gelistirici.com</li>
-					</ul>
-				</div>
-			-->
-			</div>
-			<div class="col-lg-6 mr-auto justify-content-center">
-				<!-- Feature mockup -->
-				<div class="image-content" data-aos="fade-left">
-					<img class="img-fluid" src="images/feature/feature-new-02.jpg" alt="ipad">
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--====  End of Feature Grid  ====-->
-
-<!--==============================
-=            Services            =
-===============================-->
-<section class="service section bg-gray">
-	<div class="container-fluid p-0">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="section-title">
-					<h2>An Interface For Lifestyle</h2>
-					<p><a href="/products/syrna/">Syrna</a>
-						makes
-						it easy to stay on top of your Life Style. No late tasks. No gimmicks.</p>
-				</div>
-			</div>
-		</div>
-		<div class="row no-gutters">
-			<div class="col-lg-6 align-self-center">
-				<!-- Feature Image -->
-				<div class="service-thumb left" data-aos="fade-right">
-					<img class="img-fluid" src="images/feature/iphone-ipad.jpg" alt="iphone-ipad">
-				</div>
-			</div>
-			<div class="col-lg-5 mr-auto align-self-center">
-				<div class="service-box">
-					<div class="row align-items-center">
-						<div class="col-md-6 col-xs-12">
-							<!-- Service 01 -->
-							<div class="service-item">
-								<!-- Icon -->
-								<i class="ti-bookmark"></i>
-								<!-- Heading -->
-								<h3>Easy Deployment</h3>
-								<!-- Description -->
-								<p>Installation and settings can be completed very easily and quickly thanks to the
-									ability to quickly create a new definition library from existing template
-									definitions for different business branches.</p>
-							</div>
-						</div>
-						<div class="col-md-6 col-xs-12">
-							<!-- Service 01 -->
-							<div class="service-item">
-								<!-- Icon -->
-								<i class="ti-pulse"></i>
-								<!-- Heading -->
-								<h3>Audit Mechanism</h3>
-								<!-- Description -->
-								<p>It offers advanced security and auditing capabilities thanks to the ability to track
-									who performed what action, when, where and where.</p>
-							</div>
-						</div>
-						<div class="col-md-6 col-xs-12">
-							<!-- Service 01 -->
-							<div class="service-item">
-								<!-- Icon -->
-								<i class="ti-bar-chart"></i>
-								<!-- Heading -->
-								<h3>Decision Support</h3>
-								<!-- Description -->
-								<p>A decision support module and various reporting tools are available for managers.
-									Ready-made reports and extensible features support accurate and rapid
-									decision-making.</p>
-							</div>
-						</div>
-						<div class="col-md-6 col-xs-12">
-							<!-- Service 01 -->
-							<div class="service-item">
-								<!-- Icon -->
-								<i class="ti-panel"></i>
-								<!-- Heading -->
-								<h3>Ease of Use</h3>
-								<!-- Description -->
-								<p>Its user-friendly and intuitive web interface aims to help you focus and complete
-									your tasks easily. It allows you to log in and use the application directly,
-									eliminating the need for extensive training.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--====  End of Services  ====-->
-
-<!--=================================
-=            Video Promo            =
-==================================-->
-<section class="video-promo section bg-1">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="content-block">
-					<!-- Heading -->
-					<h2>Watch Our Demo Video</h2>
-					<!-- Promotional Speech -->
-					<p>You can watch our video containing examples of the use of our application from the link below.
-					</p>
-					<!-- Popup Video -->
-					<a data-fancybox href="https://www.youtube.com/watch?v=jrkvirglgaQ">
-						<i class="ti-control-play video"></i>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--====  End of Video Promo  ====-->
-
-<!--=================================
-=            Testimonial            =
-==================================-->
-<section class="section testimonial" id="testimonial">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<!-- Testimonial Slider -->
-				<div class="testimonial-slider owl-carousel owl-theme">
-					<!-- Testimonial 01 -->
-					<div class="item">
-						<div class="block shadow">
-							<!-- Speech -->
-							<p>We've tried many applications and frameworks. We've always found errors. Again, and
-								again, and again. Now, with the strong support of the Syrna framework and its team, our
-								work has become much easier. Our past sales, quotes, and customer information are at our
-								fingertips. We can quickly see the answers to questions like what each customer's
-								payment habits are, what their ordering process is like.
-							</p>
-							<!-- Person Thumb -->
-							<div class="image">
-								<!--<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="image">-->
-							</div>
-							<!-- Name and Company -->
-							<cite>Company Manager, orionbigbag.com</cite>
-						</div>
-					</div>
-					<!-- Testimonial 01 -->
-					<div class="item">
-						<div class="block shadow">
-							<!-- Speech -->
-							<p>Continuity is essential in government. We were forced to abandon our previous software
-								due to various licensing issues and additional costs. In this situation, the process of
-								migrating existing data to the new application was our biggest concern. Thanks to the
-								flexibility of the structure and the team's experience in developing rapid solutions,
-								the transition was seamless.
-							</p>
-							<!-- Person Thumb -->
-							<div class="image">
-								<!--<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="image">-->
-							</div>
-							<!-- Name and Company -->
-							<cite>State Administrator, secret.gov.tr</cite>
-						</div>
-					</div>
-					<!-- Testimonial 01 -->
-					<div class="item">
-						<div class="block shadow">
-							<!-- Speech -->
-							<p>One of the key differences between private and public businesses is that regulatory
-								compliance requires constant updates. Sometimes, a large portion of an application or
-								module becomes completely unusable. Existing data needs to be quickly migrated and the
-								application needs to be restructured. We know our application will be ready before the
-								legislation goes into effect.
-							</p>
-							<!-- Person Thumb -->
-							<div class="image">
-								<!--<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="image">-->
-							</div>
-							<!-- Name and Company -->
-							<cite>State Project Manager, secret.gov.tr</cite>
-						</div>
-					</div>
-					<!-- Testimonial 01 -->
-					<div class="item">
-						<div class="block shadow">
-							<!-- Speech -->
-							<p>We sell appliances, furniture, bedding, and furnishings. Our products change depending on
-								the situation. What we produce or buy and sell can change. Therefore, the application
-								must be extremely flexible. Nothing must be forgotten or lost. We truly sell reputation.
-								It's more important to us than anything else. Therefore, the software must be
-								error-free. It must respond quickly. I must be accessible from anywhere.
-							</p>
-							<!-- Person Thumb -->
-							<div class="image">
-								<!--<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="image">-->
-							</div>
-							<!-- Name and Company -->
-							<cite>Mehmet Teyfik Turan, sinopspotcum.com</cite>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--====  End of Testimonial  ====-->
-
-<section class="call-to-action-app section bg-blue">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<h2>It's time to change your mind</h2>
-				<p>Download over 2 million humans .Get <a href="/products/syrna/">Syrna</a> free forever!
-					<br>We say you won’t look back.
-				</p>
-				<ul class="list-inline">
-					<li class="list-inline-item">
-						<a href="" class="btn btn-rounded-icon">
-							<i class="ti-apple"></i>
-							Iphone
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a href="" class="btn btn-rounded-icon">
-							<i class="ti-android"></i>
-							Android
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a href="" class="btn btn-rounded-icon">
-							<i class="ti-microsoft-alt"></i>
-							Windows
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!--============================
-=            Footer            =
-=============================-->
-<footer>
-  <div class="footer-main">
+<body class="body-wrapper">
+  <main class="lang-page">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-md-12 m-md-auto align-self-center">
-          <div class="block">
-            <a href="index.html"><img src="images/logo-alt.png" alt="footer-logo"></a>
-            <!-- Social Site Icons -->
-            <ul class="social-icon list-inline">
-              <li class="list-inline-item">
-                <a href="https://www.facebook.com/gelistirici.bilisim"><i class="ti-facebook"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://x.com/gelistirici"><i class="ti-twitter"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.instagram.com/gelistirici/"><i class="ti-instagram"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.linkedin.com/in/gelistirici/"><i class="ti-linkedin"></i></a>
-              </li>
-            </ul>
-          </div>
+      <div class="lang-card text-center">
+        <a href="/tr/" aria-label="Go to Turkish site">
+          <img class="lang-logo" src="tr/images/logo.png" alt="Geliştirici Bilişim">
+        </a>
+
+        <h1 class="mt-4 mb-2">Choose your language / Dil seçin</h1>
+        <p class="mb-4">Türkçe veya English</p>
+
+        <div class="lang-actions d-flex flex-column flex-sm-row justify-content-center gap-3">
+          <a class="btn btn-primary btn-lg" href="/tr/" data-lang="tr">Türkçe</a>
+          <a class="btn btn-outline-primary btn-lg" href="/en/" data-lang="en">English</a>
         </div>
-        <div class="col-lg-3 col-md-3 col-6 mt-5 mt-lg-0">
-          <div class="block-2">
-            <!-- heading -->
-            <h6>Product</h6>
-            <!-- links -->
-            <ul>
-              <li><a href="team.html">Teams</a></li>
-              <li><a href="FAQ.html">FAQs</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-6 mt-5 mt-lg-0">
-          <div class="block-2">
-            <!-- heading -->
-            <h6>Resources</h6>
-            <!-- links -->
-            <ul>
-              <!-- <li><a href="sign-up.html">Singup</a></li> -->
-              <!-- <li><a href="sign-in.html">Login</a></li> -->
-              <li><a href="https://www.facebook.com/gelistirici.bilisim/">Product Info</a></li>
-              <!-- <li><a href="blog.html">Blogs</a></li> -->
-              <li><a href="http://demo.gelistirici.com">Demo Application</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-6 mt-5 mt-lg-0">
-          <div class="block-2">
-            <!-- heading -->
-            <h6>Company</h6>
-            <!-- links -->
-            <ul>
-              <li><a href="about.html">About</a></li>
-              <!-- <li><a href="career.html">Career</a></li> -->
-              <li><a href="contact.html">Contact</a></li>
-              <!-- <li><a href="team.html">Investor</a></li> -->
-              <li><a href="terms.html">Terms & Conditions</a></li>
-              <li><a href="privacy.html">Privacy Policy</a></li>
-            </ul>
-          </div>
-        </div>
+
+        <p class="mt-4 mb-0 small text-muted">
+          <a href="/tr/privacy.html">Gizlilik</a> · <a href="/en/privacy.html">Privacy</a>
+          · <a href="/tr/contact.html">İletişim</a> · <a href="/en/contact.html">Contact</a>
+        </p>
       </div>
     </div>
-  </div>
-  <div class="text-center bg-dark py-4">
-    <small class="text-secondary">Copyright &copy;
-      <script>document.write(new Date().getFullYear())</script>. Designed &amp; Developed by <a
-        href="https://gelistirici.com/">Gelistirici</a>
-    </small class="text-secondary">
-  </div>
-</footer>
+  </main>
 
-<!-- To Top -->
-<div class="scroll-top-to">
-  <i class="ti-angle-up"></i>
-</div>
+  <script>
+    (function () {
+      var preferred = null;
+      try {
+        preferred = window.localStorage.getItem('preferredLang');
+      } catch (_) {
+        preferred = null;
+      }
 
-<!-- JAVASCRIPTS -->
-<script src="plugins/jquery/jquery.min.js"></script>
-<script src="plugins/bootstrap/bootstrap.min.js"></script>
-<script src="plugins/slick/slick.min.js"></script>
-<script src="plugins/fancybox/jquery.fancybox.min.js"></script>
-<script src="plugins/syotimer/jquery.syotimer.min.js"></script>
-<script src="plugins/aos/aos.js"></script>
-<!-- google map -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUn5-NgsXMHApHtVrrUS-RVucdi9T5iEs"></script>
-<script src="plugins/google-map/gmap.js"></script>
+      // Only auto-redirect if user has explicitly chosen before.
+      if (preferred === 'tr') {
+        window.location.replace('/tr/');
+        return;
+      }
 
-<script src="js/script.js"></script>
+      if (preferred === 'en') {
+        window.location.replace('/en/');
+        return;
+      }
 
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D4NGCLL6PY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag () { dataLayer.push(arguments); }
-  gtag('js', new Date());
-
-  gtag('config', 'G-D4NGCLL6PY');
-</script>
-
-<!-- Load plugin script -->
-<script type="module" src="js/cookieconsent-config.js"></script>
-
+      var buttons = document.querySelectorAll('[data-lang]');
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', function (e) {
+          try {
+            window.localStorage.setItem('preferredLang', this.getAttribute('data-lang'));
+          } catch (_) {
+            // ignore
+          }
+        });
+      }
+    })();
+  </script>
 </body>
 
 </html>

@@ -1,0 +1,228 @@
+@@include('header.htm', {"lang":"tr","site":"https://www.gelistirici.com","canonicalPath":"tr/homepage-3.html","trPath":"tr/homepage-3.html","enPath":"en/homepage-3.html"})
+
+@@include('blocks/navigation.htm', {"lang":"tr", "home":"active", "home3": "active", "page":"homepage-3.html", "altBase":"../en/", "altLabel":"EN"})
+<!--==================================
+=            Hero Section            =
+===================================-->
+
+<section class="banner">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 m-auto">
+				<!-- Banner Contents -->
+				<div class="block text-center">
+					<h1>Süreçlerinizi yönetmenin yeni yolu</h1>
+					<p>Basit ve sezgisel bir deneyimle işlerinizi planlayın,<br>
+						raporlayın ve ekipçe aynı sayfada kalın.
+					</p>
+					<!-- Go to App page -->
+					<ul class="list-inline app-badge">
+						<!-- Apple Store -->
+						<li class="list-inline-item">
+							<a href="FAQ.html"><img src="images/app/appple-store.jpg" alt="App Store"></a>
+						</li>
+						<!-- Google Play -->
+						<li class="list-inline-item">
+							<a href="FAQ.html"><img src="images/app/google-play.jpg" alt="Google Play"></a>
+						</li>
+					</ul>
+					<!-- Promo Video -->
+					<div class="video">
+						<img class="img-fluid shadow" src="images/thumbs/promo-video-thumbnail.jpg" alt="video önizleme görseli">
+						<div class="video-button video-box">
+							<!-- Video Play Button -->
+							<a href="javascript:void(0)">
+								<i class="ti-control-play" data-video="https://www.youtube.com/embed/jrkvirglgaQ?autoplay=1"></i>
+							</a>
+						</div>
+					</div>
+					<!-- Clients -->
+					<ul class="list-inline clients-logo">
+						<!-- Client Logo -->
+						<li class="list-inline-item">
+							<a href="#"><img src="images/clients/buzz-feed.png" alt="buzz-feed"></a>
+						</li>
+						<!-- Client Logo -->
+						<li class="list-inline-item">
+							<a href="#"><img src="images/clients/the-new-york-times.png" alt="the-new-york-times"></a>
+						</li>
+						<!-- Client Logo -->
+						<li class="list-inline-item">
+							<a href="#"><img src="images/clients/tech-crunch.png" alt="tech-crunch"></a>
+						</li>
+						<!-- Client Logo -->
+						<li class="list-inline-item">
+							<a href="#"><img src="images/clients/the-washington-post.png" alt="the-washington-post"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Hero Section  ====-->
+
+<!--==============================
+=            Services            =
+===============================-->
+<section class="services section bg-gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<!-- Section Title -->
+				<div class="section-title">
+					<h2><a href="/products/syrna/">Syrna</a> nedir?</h2>
+					<p><a href="/products/syrna/">Syrna</a>, iş süreçlerinizi tek bir platformda yönetmenize yardımcı olan
+						genişletilebilir bir altyapıdır.</p>
+				</div> 
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-6 align-self-center">
+				<!-- Service 01 -->
+				@@include('blocks/service.htm',{
+					"icon" : "ti-dashboard",
+					"heading": "Süreç Geliştirme",
+					"description" : "İhtiyacınıza göre modüller ekleyin, ekranları özelleştirin ve süreçlerinizi uçtan uca yönetin."
+				})
+				<!-- Service 02 -->
+				@@include('blocks/service.htm',{
+					"icon" : "ti-headphone-alt",
+					"heading": "Güçlü Destek",
+					"description" : "Kurulumdan üretime kadar yanınızdayız; sorularınızı hızlıca yanıtlayıp birlikte çözüm üretiriz."
+				})
+			</div>
+			<div class="col-lg-4 m-auto">
+				<div class="app-preview">
+					<img src="images/feature/iphone.jpg" alt="iphone">				
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 align-self-center">
+				<!-- Service 03 -->
+				@@include('blocks/service.htm',{
+					"icon" : "ti-ruler-pencil",
+					"heading": "UI/UX Tasarım",
+					"description" : "Kullanıcı dostu arayüz bileşenleriyle ekibinizin işini kolaylaştırın."
+				})
+				<!-- Service 04 -->
+				@@include('blocks/service.htm',{
+					"icon" : "ti-stats-up",
+					"heading": "Performans ve Raporlama",
+					"description" : "Panolar ve raporlar ile metrikleri izleyin; veriye dayalı kararlar alın."
+				})
+			</div>
+		</div>
+	</div>
+</section>
+<!--====  End of Services  ====-->
+
+<!--==================================
+=            Feature Grid            =
+===================================-->
+<section class="feature section" id="features">
+	<div class="container-fluid p-0">
+		<div class="row no-gutters">
+			<div class="col-lg-6">
+				<!-- Feature Image -->
+				<div class="feature-image left"  data-aos="fade-right">
+					<img class="img-fluid" src="images/feature/iphone-ipad.jpg" alt="iphone-ipad">
+				</div>
+			</div>
+			<div class="col-lg-4 mr-auto align-self-center">
+				<!-- Feature Content -->
+				<div class="feature-content">
+					<h2>Görev Yönetimi İçin Tam Araç Seti</h2>
+					<p>Listeler, panolar ve raporlarla işleri görünür kılın. Filtreleme, planlama ve paylaşım özellikleriyle
+						ekibinizin tempo kaybetmeden ilerlemesini sağlayın.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="feature section bg-gray">
+	<div class="container-fluid p-0">
+		<div class="row no-gutters">
+			<div class="col-lg-4 ml-auto align-self-center">
+				<!-- Feature Content -->
+				<div class="feature-content">
+					<h2>Görev Yönetimi İçin Tam Araç Seti</h2>
+					<p>Planlarınızı ekip içinde paylaşın, hatırlatmalarla süreçleri otomatikleştirin ve veriyi dışa aktarın.
+						Syrna'nın esnek yapısı farklı iş kollarına kolayca uyarlanır.</p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<!-- Feature Image -->
+				<div class="feature-image right" data-aos="fade-left">
+					<img class="img-fluid" src="images/feature/ipad.jpg" alt="ipad">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--====  End of Feature Grid  ====-->
+
+<!--==================================
+=            App Features            =
+===================================-->
+
+<section class="app-features section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="section-title">
+					<h2><a href="/products/syrna/">Syrna</a> nedir?</h2>
+					<p><a href="/products/syrna/">Syrna</a>, süreç yönetimini hızlandıran ve özelleştirilebilir bir altyapıdır.<br>
+						Gereksiz karmaşa yok; odak işinizde.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<!-- App Feature Image -->
+				<div class="app-explore" data-aos="fade-down">
+					<img class="img-fluid" src="images/feature/ipad-lied.jpg" alt="ipad-lied">
+				</div>
+			</div>
+			<!-- Feature 01-->
+			<div class="col-lg-4 col-md-4">
+				<div class="app-feature text-center">
+					<!-- Heading -->
+					<h3>Modern Tasarım</h3>
+					<!-- Description -->
+					<p>Temiz ve anlaşılır arayüzle kullanıcılarınızın daha hızlı işlem yapmasını sağlayın.</p>
+				</div>
+			</div>
+			<!-- Feature 02-->
+			<div class="col-lg-4 col-md-4">
+				<div class="app-feature text-center">
+					<!-- Heading -->
+					<h3>Yüksek Özelleştirilebilirlik</h3>
+					<!-- Description -->
+					<p>İş akışlarınıza uygun ekranlar ve raporlar oluşturun; ihtiyaç değiştikçe kolayca güncelleyin.</p>
+				</div>
+			</div>
+			<!-- Feature 02-->
+			<div class="col-lg-4 col-md-4">
+				<div class="app-feature text-center">
+					<!-- Heading -->
+					<h3>Ölçeklenebilir Yapı</h3>
+					<!-- Description -->
+					<p>Küçük ekiplerden büyük organizasyonlara kadar büyümeyi destekleyen esnek bir mimari.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of App Features  ====-->
+
+@@include('blocks/call-to-action-app.htm', {"lang":"tr"})
+
+@@include('blocks/footer.htm', {"lang":"tr"})
+
+@@include('footer.htm')
+
+
+

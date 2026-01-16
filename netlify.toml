@@ -1,6 +1,86 @@
 [build]
-publish = "theme"
+publish = "dist"
 command = "npm run build"
+
+[[redirects]]
+from = "/about.html"
+to = "/tr/about.html"
+status = 301
+
+[[redirects]]
+from = "/contact.html"
+to = "/tr/contact.html"
+status = 301
+
+[[redirects]]
+from = "/privacy.html"
+to = "/tr/privacy.html"
+status = 301
+
+[[redirects]]
+from = "/terms.html"
+to = "/tr/terms.html"
+status = 301
+
+[[redirects]]
+from = "/FAQ.html"
+to = "/tr/FAQ.html"
+status = 301
+
+[[redirects]]
+from = "/team.html"
+to = "/tr/team.html"
+status = 301
+
+[[redirects]]
+from = "/blog.html"
+to = "/tr/blog.html"
+status = 301
+
+[[redirects]]
+from = "/blog-single.html"
+to = "/tr/blog-single.html"
+status = 301
+
+[[redirects]]
+from = "/career.html"
+to = "/tr/career.html"
+status = 301
+
+[[redirects]]
+from = "/comming-soon.html"
+to = "/tr/comming-soon.html"
+status = 301
+
+[[redirects]]
+from = "/homepage-2.html"
+to = "/tr/homepage-2.html"
+status = 301
+
+[[redirects]]
+from = "/homepage-3.html"
+to = "/tr/homepage-3.html"
+status = 301
+
+[[redirects]]
+from = "/privacy-policy_ex.html"
+to = "/tr/privacy-policy_ex.html"
+status = 301
+
+[[redirects]]
+from = "/sign-in.html"
+to = "/tr/sign-in.html"
+status = 301
+
+[[redirects]]
+from = "/sign-up.html"
+to = "/tr/sign-up.html"
+status = 301
+
+[[redirects]]
+from = "/404.html"
+to = "/tr/404.html"
+status = 301
 
 [[headers]]
 for = "/*" # This defines which paths this specific [[headers]] block will cover.

@@ -1,0 +1,87 @@
+@@include('header.htm', {"lang":"tr","site":"https://www.gelistirici.com","canonicalPath":"tr/contact.html","trPath":"tr/contact.html","enPath":"en/contact.html"})
+
+@@include('blocks/navigation.htm', {"lang":"tr", "contact": "active", "page":"contact.html", "altBase":"../en/", "altLabel":"EN"})
+
+@@include('blocks/page-title.htm',{
+	"title"		: "Bize Ulaşın",
+	"description" : "Şirket merkezimiz Ankara'da olsa da Gaziantep, İstanbul, İzmir ve Sinop gibi şehirlerde de iletişim noktalarımız bulunmaktadır."
+})
+
+<!--=====================================
+=           Adres ve Harita             =
+======================================-->
+<section class="address">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-5 align-self-center">
+				<div class="block">
+					<div class="address-block text-center mb-5">
+						<div class="icon">
+							<i class="ti-mobile"></i>
+						</div>
+						<div class="details">
+							<h3>(90) 532 712 22 62 (TR)</h3>
+						</div>
+					</div>
+					<div class="address-block text-center">
+						<div class="icon">
+							<i class="ti-map-alt"></i>
+						</div>
+						<div class="details">
+							<h3>Gaziantep Üni. Teknopark Yerleşkesi</h3>
+							<h3>Çamtepe Mah. Mahmut Tevfik Atay Bulvarı</h3>
+							<h3>C Blok No 102 Şahinbey/Gaziantep</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-7 mt-5 mt-lg-0">
+				<div class="google-map">
+					<!-- Google Map -->
+					<div id="map_canvas" data-latitude="37.02843968662745" data-longitude="37.3070583005385"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  Adres ve Harita Sonu  ====-->
+<section class="contact-form section">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="mb-5 text-center">Bize mesaj gönderin</h2>
+			</div>
+			<div class="col-12">
+				<form action="">
+					<div class="row">
+						<!-- Ad Soyad -->
+						<div class="col-md-6 mb-2">
+							<input class="form-control main" type="text" placeholder="Ad Soyad" required>
+						</div>
+						<!-- E-posta -->
+						<div class="col-md-6 mb-2">
+							<input class="form-control main" type="email" placeholder="E-posta Adresiniz" required>
+						</div>
+						<!-- Konu -->
+						<div class="col-md-12 mb-2">
+							<input class="form-control main" type="text" placeholder="Konu" required>
+						</div>
+						<!-- Mesaj -->
+						<div class="col-md-12 mb-2">
+							<textarea class="form-control main" name="message" rows="10" placeholder="Mesajınız"></textarea>
+						</div>
+						<!-- Gönder Butonu -->
+						<div class="col-12 text-right">
+							<button class="btn btn-main-md">Gönder</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+@@include('blocks/footer.htm', {"lang":"tr"})
+
+@@include('footer.htm')

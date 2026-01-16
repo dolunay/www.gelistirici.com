@@ -1,0 +1,142 @@
+@@include('header.htm', {"lang":"tr","site":"https://www.gelistirici.com","canonicalPath":"tr/blog-single.html","trPath":"tr/blog-single.html","enPath":"en/blog-single.html"})
+
+@@include('blocks/navigation.htm', {"lang":"tr", "pages" : "active", "blogSingle" : "active", "page":"blog-single.html", "altBase":"../en/", "altLabel":"EN"})
+
+<!--====================================
+=            Single Article            =
+=====================================-->
+<section class="section blog-single">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 m-auto">
+				<!-- Single Post -->
+				<article class="single-post">
+					<!-- Post title -->
+					<div class="post-title text-center">
+						<h1>Yenilik, lideri takipçiden ayırır.</h1>
+						<!-- Tags -->
+						<ul class="list-inline post-tag">
+							<li class="list-inline-item">
+								<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="yazar görseli">
+							</li>
+							<li class="list-inline-item">
+								<a href="#">Thomas Johnson</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#">8 Ağustos 2017</a>
+							</li>
+						</ul>
+					</div>
+					<!-- Post body -->
+					<div class="post-body">
+						<!-- Feature Image -->
+						<div class="feature-image">
+							<img class="img-fluid" src="images/blog/single-blog-feature-image.jpg" alt="öne çıkan görsel">
+						</div>
+						<!-- Paragrapgh -->
+						<p>Yenilik; yalnızca yeni bir özellik eklemek değildir. Ürünün kullanıcıya sağladığı değeri artıran,
+							sürdürülebilir ve ölçülebilir iyileştirmeler bütünü olarak düşünülmelidir.</p>
+						<p>Bu yazıda; küçük ekiplerde inovasyonu sistematik hale getirmek için pratik önerileri paylaşıyoruz.
+							Geri bildirim döngülerini kısaltmak, doğru metrikleri izlemek ve iteratif geliştirme yapmak bu sürecin
+							anahtarıdır.</p>
+						<!-- Blockquote -->
+						<div class="quote">
+							<blockquote>
+								Tasarım yalnızca nasıl göründüğü ve hissettirdiği değildir; nasıl çalıştığıdır.
+							</blockquote>
+						</div>
+						<!-- Paragrapgh -->
+						<p>İyi bir tasarım; ekip içi kararları hızlandırır, hataları azaltır ve kullanıcıya güven verir.
+							Bu yüzden arayüzde tutarlılık, erişilebilirlik ve performans birlikte ele alınmalıdır.</p>
+						<!-- Post Image -->
+						<div class="post-image text-center">
+							<img class="img-fluid" src="images/blog/post-body-image.jpg" alt="yazı içi görsel">
+						</div>
+						<!-- Paragrapgh -->
+						<p>Sonuç olarak; inovasyon, doğru soruları sorup sürekli iyileştirmeye devam etmekle başlar.
+							Küçük iterasyonlar, net hedefler ve düzenli ölçüm ile kalıcı bir fark yaratabilirsiniz.</p>
+					</div>
+				</article>
+				<!-- About Author Widget -->
+				<div class="about-author">
+					<h2>Yazar hakkında</h2>
+					<div class="media">
+						<!-- Author Image -->
+						<div class="image">
+							<img class="d-flex justify-content-center align-self-center"
+								src="images/team/marketing-team-03.jpg" alt="yazar fotoğrafı">
+						</div>
+						<!-- About Author -->
+						<div class="media-body align-self-center">
+							<!-- Author Name -->
+							<h3>Jonathon Andrew</h3>
+							<!-- Bio -->
+							<p>Ürün geliştirme, süreç yönetimi ve yazılım mimarisi üzerine çalışır. Ekiplerin daha hızlı ve
+								daha güvenli teslimat yapabilmesi için pratik yaklaşımlar paylaşır.</p>
+							<!-- Author Social links -->
+							<ul class="list-inline social-links">
+								<li class="list-inline-item"><a href="https://gelistirici.com/"><i
+											class="ti-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="https://gelistirici.com/"><i
+											class="ti-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="https://gelistirici.com/"><i
+											class="ti-instagram"></i></a></li>
+								<li class="list-inline-item"><a href="https://gelistirici.com/"><i
+											class="ti-dribbble"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--====  End of Single Article  ====-->
+
+<!--======================================
+=            Related Article            =
+=======================================-->
+<section class="section related-articles bg-gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 title">
+				<!-- Section Title -->
+					<h2>İlgili Yazılar</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-6">
+				@@include('blocks/article.htm',{"lang":"tr",
+				"img-src" : "images/blog/post-01.jpg",
+				"post-title" : "Yenilik, lideri takipçiden ayırır.",
+				"author" : "Geliştirici Ekibi",
+				"date" : "8 Ağustos 2017",
+				"excerpt" : "İnovasyonu süreç haline getirmek için kısa öneriler."
+				})
+			</div>
+			<div class="col-lg-4 col-md-6">
+				@@include('blocks/article.htm',{"lang":"tr",
+				"img-src" : "images/blog/post-02.jpg",
+				"post-title" : "Tasarım yalnızca nasıl göründüğü ve hissettirdiği değildir; nasıl çalıştığıdır.",
+				"author" : "Geliştirici Ekibi",
+				"date" : "8 Ağustos 2017",
+				"excerpt" : "UI/UX kararlarını hızlandıran pratikler ve örnekler."
+				})
+			</div>
+			<div class="col-lg-4 col-md-6">
+				@@include('blocks/article.htm',{"lang":"tr",
+				"img-src" : "images/blog/post-03.jpg",
+				"post-title" : "Tasarım yalnızca nasıl göründüğü ve hissettirdiği değildir; nasıl çalıştığıdır.",
+				"author" : "Geliştirici Ekibi",
+				"date" : "8 Ağustos 2017",
+				"excerpt" : "Tasarım sistemi ile tutarlı arayüzler oluşturma."
+				})
+			</div>
+		</div>
+	</div>
+</section>
+<!--====  End of Related Article  ====-->
+
+@@include('blocks/footer.htm', {"lang":"tr"})
+
+@@include('footer.htm')
